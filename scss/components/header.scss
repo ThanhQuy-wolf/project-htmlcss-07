@@ -1,0 +1,49 @@
+@use "../base/" as *;
+
+/* ========= Header ========= */
+.header {
+    padding-top: 42px;
+    background: $background-color;
+
+    &__nav {
+        @include flexCenter(space-between, center);
+    }
+
+    .nav {
+        &__list-link {
+            @include flexCenter();
+            gap: 48px;
+        }
+        &__link {
+            color: #665F73;
+            transition: all 0.3s;
+
+            i {
+                font-size: 1rem;
+            }
+        }
+        &__link:hover {
+            text-decoration: underline;
+            color: $primary-color;
+        }
+        &__btn-cover {
+            display: flex;
+            align-items: center;
+        }
+        &__btn {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-right: 28px;
+            color: $primary-color;
+        }
+        &__btn--md {
+            padding: 9px 29px;
+            color: #fff;
+        }
+    }
+
+    &__content {
+        justify-content: space-between;
+        margin-top: 110px;
+    }
+}

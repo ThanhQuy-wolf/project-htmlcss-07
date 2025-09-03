@@ -1,3 +1,6 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
 *,
 ::before,
 ::after {
@@ -15,6 +18,8 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-weight: 400;
+    color: var.$primary-color;
 }
 
 a {
@@ -33,4 +38,66 @@ button {
     outline: none;
     border: none;
     background: transparent;
+}
+
+.title,
+[class$="__title"] {
+    font-size: 7rem;
+    line-height: 1.14; /* 114.286% */
+    font-weight: 700;
+    color: var.$primary-color;
+}
+
+[class$="__title"] {
+    font-size: 4.2rem;
+    line-height: 1.24; /* 123.81% */
+}
+
+[class$="__sub-title"] {
+    font-size: 2rem;
+    line-height: 1.5; /* 150% */
+}
+
+[class$="__btn--lg"],
+[class$="__btn--md"],
+[class$="__btn--sm"] {
+    @include mix.size(157px, 64px);
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66667; /* 166.667% */
+    color: var.$primary-color;
+    background: var.$button-color;
+}
+
+[class$="__btn--md"] {
+    @include mix.size(116px, 48px);
+    border-radius: 6px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    background: var.$primary-color;
+}
+
+[class$="__btn--sm"] {
+    font-size: 1.4rem;
+    line-height: 1.72;
+}
+
+[class$="__desc--lg"],
+[class$="__desc--md"],
+[class$="__desc--sm"] {
+    font-size: 1.8rem;
+    line-height: 1.6667;
+    color: var.$primary-color;
+}
+
+[class$="__desc--md"] {
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+[class$="__desc--sm"] {
+    font-size: 1.4rem;
+    line-height: 1.72;
 }

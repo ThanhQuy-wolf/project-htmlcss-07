@@ -2,26 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Babble</title>
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
     <!-- CSS -->
-     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Navigation -->
+            <nav class="header__nav">
+                <img src="./assets/img/Logo.svg" alt="" class="nav__logo">
+                <ul class="nav__list-link">
+                    <li class="nav__item nav__desc--md"><a href="#!" class="nav__link">Episodes</a></li>
+                    <li class="nav__item nav__desc--md"><a href="#!" class="nav__link">Trending</a></li>
+                    <li class="nav__item nav__desc--md">
+                        <a href="#!" class="nav__link">
+                            Category
+                            <i class="bi bi-chevron-compact-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__desc--md"><a href="#!" class="nav__link">Blog</a></li>
+                </ul>
 
+                <div class="nav__btn-cover">
+                    <a href="#!" class="nav__btn">Log in</a>
+                    <a href="#!" class="nav__btn--md">Sign up</a>
+                </div>
+            </nav>
+
+            <div class="row row-cols-1 row-cols-lg-2 header__content">
+                <div class="col-12 col-lg-6">
+                    <figure class="header__images">
+                        <img src="" alt="" class="images__image">
+                        <img src="" alt="" class="images__image">
+                    </figure>
+                </div>
+
+                <div class="col-12 col-lg-5"></div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>

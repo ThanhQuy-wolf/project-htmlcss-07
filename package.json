@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass library/sass/main.scss:library/assets/css/main.css -w"
+    "start": "sass scss/main.scss:assets/css/main.css -w"
   },
   "author": "",
   "license": "ISC"
