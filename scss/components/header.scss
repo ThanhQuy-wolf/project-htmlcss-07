@@ -157,6 +157,13 @@
     }
     &__title {
         margin-bottom: 20px;
+        z-index: 2;
+
+        &-bg {
+            top: 150px;
+            left: 25px;
+            z-index: 1;
+        }
     }
     &__desc--lg {
         margin-bottom: 40px;

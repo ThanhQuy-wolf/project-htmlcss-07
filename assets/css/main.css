@@ -1367,6 +1367,12 @@ button {
 }
 .header__title {
   margin-bottom: 20px;
+  z-index: 2;
+}
+.header__title-bg {
+  top: 150px;
+  left: 25px;
+  z-index: 1;
 }
 .header__desc--lg {
   margin-bottom: 40px;
