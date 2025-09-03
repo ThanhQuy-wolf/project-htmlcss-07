@@ -1100,6 +1100,7 @@ html {
 }
 
 body {
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   color: #201830;
@@ -1121,6 +1122,22 @@ button {
   outline: none;
   border: none;
   background: transparent;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.dis-inline-block {
+  display: inline-block;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .title,
@@ -1190,6 +1207,7 @@ button {
 /* ========= Header ========= */
 .header {
   padding-top: 42px;
+  padding-bottom: 140px;
   background: #fff8f3;
 }
 .header__nav {
@@ -1204,7 +1222,7 @@ button {
   gap: 48px;
 }
 .header .nav__link {
-  color: #665F73;
+  color: #665f73;
   transition: all 0.3s;
 }
 .header .nav__link i {
@@ -1231,6 +1249,146 @@ button {
 .header__content {
   justify-content: space-between;
   margin-top: 110px;
+}
+.header__images {
+  display: flex;
+}
+.header__images .images__image {
+  width: 270px;
+  height: 302px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.header__images .images__card {
+  bottom: -83px;
+  left: -6px;
+}
+.header__images .images__listener {
+  width: auto;
+  height: auto;
+  margin-top: 53px;
+  background: transparent;
+}
+.header__images .images__avt-gr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+.header__images .images__avatar, .header__images .images__avatar--more {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: -18px;
+  outline: 2px solid #fff;
+}
+.header__images .images__avatar:first-child {
+  margin-left: 0;
+}
+.header__images .images__avatar--more {
+  background: #201830;
+}
+.header__images .images__avatar--text {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+.header__images .images__icon--box {
+  width: 270px;
+  height: 158px;
+}
+.header__images .images__icon--circle {
+  width: 82px;
+  height: 82px;
+  top: 8px;
+  right: -148px;
+  border-radius: 50%;
+  background: #ff9051;
+}
+.header__images .images__icon--content {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__images .images__icon--text:first-child {
+  margin-bottom: 4px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+}
+.header__images .images__icon--text:last-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffefe7;
+}
+.header__images .images__icon--line.left {
+  top: 44.5px;
+  left: 54px;
+}
+.header__images .images__icon--line.right {
+  bottom: 13px;
+  right: 63px;
+}
+.header__images .images__icon--list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 18px;
+  gap: 18px;
+}
+.header__images .images__card-text {
+  width: 194px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 16px;
+  left: 38px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 44px 0 rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.header__images .images__card-text--author {
+  margin-bottom: 6px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.header__images .images__card-text--name-song {
+  font-size: 1.2rem;
+  color: #665f73;
+}
+.header__title {
+  margin-bottom: 20px;
+}
+.header__desc--lg {
+  margin-bottom: 40px;
+}
+.header__btn-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+}
+.header__btn--lg:first-child {
+  padding: 17px 27px;
+  color: #fff;
+}
+.header__btn--lg:last-child {
+  width: auto;
+  height: auto;
+  padding: 17px 14px;
+  background: transparent;
+}
+.header__btn--lg:last-child i {
+  margin-left: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */

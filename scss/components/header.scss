@@ -3,6 +3,7 @@
 /* ========= Header ========= */
 .header {
     padding-top: 42px;
+    padding-bottom: 140px;
     background: $background-color;
 
     &__nav {
@@ -15,7 +16,7 @@
             gap: 48px;
         }
         &__link {
-            color: #665F73;
+            color: #665f73;
             transition: all 0.3s;
 
             i {
@@ -45,5 +46,138 @@
     &__content {
         justify-content: space-between;
         margin-top: 110px;
+    }
+    &__images {
+        display: flex;
+
+        // Image left
+        .images {
+            &__image {
+                @include size(270px, 302px);
+                object-fit: cover;
+                border-radius: 8px;
+            }
+            &__card {
+                bottom: -83px;
+                left: -6px;
+            }
+            &__listener {
+                @include size(auto, auto);
+                margin-top: 53px;
+                background: transparent;
+            }
+            &__avt-gr {
+                @include flexCenter(flex-start, center);
+                margin-top: 10px;
+            }
+            &__avatar,
+            &__avatar--more {
+                @include size(48px);
+                border-radius: 50%;
+                margin-left: -18px;
+                outline: 2px solid #fff;
+            }
+            &__avatar:first-child {
+                margin-left: 0;
+            }
+            &__avatar--more {
+                background: $primary-color;
+            }
+            &__avatar--text {
+                @include position(center);
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+        // Image right
+        .images {
+            &__icon {
+                &--box {
+                    @include size(270px, 158px);
+                }
+                &--circle {
+                    @include size(82px);
+                    top: 8px;
+                    right: -148px;
+                    border-radius: 50%;
+                    background: $secondary-color;
+                }
+                &--content {
+                    @include position(center);
+                    @include flexCenter();
+                }
+                &--text:first-child {
+                    margin-bottom: 4px;
+                    font-size: 1.4rem;
+                    font-weight: 800;
+                    color: #fff;
+                }
+                &--text:last-child {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: #ffefe7;
+                }
+                &--line.left {
+                    top: 44.5px;
+                    left: 54px;
+                }
+                &--line.right {
+                    bottom: 13px;
+                    right: 63px;
+                }
+                &--list {
+                    @include flexCenter(space-between, center);
+                    bottom: 18px;
+                    gap: 18px;
+                }
+            }
+            &__card-text {
+                @include size(194px, 60px);
+                @include flexCenter();
+                bottom: 16px;
+                left: 38px;
+                border-radius: 9px;
+                background: rgba(255, 255, 255, 0.4);
+                box-shadow: 0 12px 44px 0 rgba(0, 0, 0, 0.07);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+
+                &--author {
+                    margin-bottom: 6px;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+                &--name-song {
+                    font-size: 1.2rem;
+                    color: #665f73;
+                }
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__desc--lg {
+        margin-bottom: 40px;
+    }
+    &__btn {
+        &-box {
+            @include flexCenter(flex-start, center);
+            gap: 14px;
+        }
+        &--lg:first-child {
+            padding: 17px 27px;
+            color: #fff;
+        }
+        &--lg:last-child {
+            @include size(auto, auto);
+            padding: 17px 14px;
+            background: transparent;
+
+            i {
+                margin-left: 8px;
+            }
+        }
     }
 }
