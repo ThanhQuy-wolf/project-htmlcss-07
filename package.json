@@ -1,0 +1,15 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "- File .scss chủ yếu để khai báo các biến, mixin, functions nếu kiến trúc nhỏ có thể gộp chung vào file này.     - File _reset.scss để reset CSS     - File _base.scss để định nghĩa các kiểu CSS cơ bản như typography, links, lists, ...",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass library/sass/main.scss:library/assets/css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

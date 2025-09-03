@@ -1,0 +1,57 @@
+@mixin flexCenter($horizontal: center, $vertical: center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin rounded($tl, $tr: $tl, $br: $tl, $bl: $tl) {
+    border-radius: $tl $tr $br $bl;
+}
+
+@mixin grid($column, $spacing) {
+    --column: #{$column};
+    --spacing: #{$spacing};
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--spacing);
+    margin-left: calc(-1 * var(--spacing));
+
+    > * {
+        width: calc(100% / var(--column) - var(--spacing));
+        margin-left: var(--spacing);
+    }
+}
+
+@mixin position($pos) {
+    @if $pos == top-left {
+        top: 0;
+        left: 0;
+    }
+
+    @if $pos == top-right {
+        top: 0;
+        right: 0;
+    }
+
+    @if $pos == bottom-right {
+        bottom: 0;
+        right: 0;
+    }
+
+    @if $pos == bottom-left {
+        bottom: 0;
+        left: 0;
+    }
+
+    @if $pos == center {
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+}
