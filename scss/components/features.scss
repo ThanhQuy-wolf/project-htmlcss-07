@@ -1,0 +1,84 @@
+@use "../base/" as *;
+
+/* ========= Features ========= */
+@media (min-width: 992px) {
+    .col-lg-feature-1 {
+        width: 62.5%;
+        flex: 0 0 auto;
+    }
+    .col-lg-feature-2 {
+        width: 37.5%;
+        flex: 0 0 auto;
+    }
+}
+
+.features {
+    &__content {
+        @include flexCenter();
+        width: 100%;
+    }
+    &__title {
+        margin-bottom: 18px;
+    }
+    &__desc--md {
+        margin-bottom: 70px;
+    }
+    &__card--card {
+        .card-1__image {
+            @include size(100%, 600px);
+            object-position: 20% center;
+        }
+        .card-2__image {
+            @include size(100%, 285px);
+            object-position: 20% center;
+        }
+        .card-3__image {
+            @include size(100%, 285px);
+            object-position: 40% center;
+        }
+        .card-4__image {
+            margin-top: 30px;
+            @include size(100%, 285px);
+            object-position: 40% center;
+        }
+        .card-5__image {
+            margin-top: 30px;
+            @include size(100%, 285px);
+            object-position: 40% center;
+        }
+    }
+    &__btn-cover {
+        @include flexCenter();
+        margin-top: 55px;
+    }
+    &__btn--lg {
+        padding: 17px 26px;
+        transition: all 0.3s;
+        color: #fff;
+        background: $primary-color;
+    }
+    &__btn--lg:hover {
+        opacity: 0.9;
+    }
+}
+
+.features__card [class$="__image"] {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card {
+    &__btn--lg {
+        @include size(auto, auto);
+        background: transparent;
+        color: #fff;
+
+        i {
+            margin-left: 8px;
+            font-size: 1.4rem;
+        }
+    }
+    &__desc--sm {
+        color: #fff;
+    }
+}

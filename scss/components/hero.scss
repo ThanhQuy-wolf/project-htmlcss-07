@@ -1,0 +1,62 @@
+@use "../base/" as *;
+
+/* ========= Hero ========= */
+.hero {
+    &__title {
+        margin-top: 45px;
+        margin-bottom: 18px;
+    }
+    &__icon-bg {
+        bottom: -10px;
+        left: -52px;
+        z-index: -1;
+        scale: 0.8;
+    }
+    &__desc--md {
+        margin-bottom: 38px;
+    }
+    &__btn--lg {
+        padding: 17px 15px;
+        color: #fff;
+
+        i {
+            margin-left: 8px;
+            font-size: 1.6rem;
+        }
+    }
+    &__social {
+        &-cloud {
+            right: 0;
+            top: 59px;
+        }
+        &-circle {
+            left: 0;
+            top: 164px;
+        }
+        &-music {
+            top: 0;
+            left: 185px;
+            scale: 5.3;
+        }
+        &-spotify {
+            top: 319px;
+            left: 169px;
+            scale: 4.5;
+        }
+        &-color {
+            top: 221px;
+            left: 385px;
+            scale: 5;
+        }
+        &--bg {
+            @include size(287px);
+            top: 56px;
+            left: 142px;
+            border-radius: 100%;
+            background: $secondary-color;
+            opacity: 0.4;
+            filter: blur(129px);
+            z-index: -1;
+        }
+    }
+}

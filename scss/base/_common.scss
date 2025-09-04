@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: var.$font-family;
     font-size: 1.6rem;
     font-weight: 400;
     color: var.$primary-color;
@@ -56,16 +56,29 @@ button {
     flex-direction: column;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.flex-algin-center {
+    display: flex;
+    align-items: center;
+}
+
 .title,
 [class$="__title"] {
-    font-size: 7rem;
+    font-size: var.$text-size--main-title;
     line-height: 1.14; /* 114.286% */
     font-weight: 700;
     color: var.$primary-color;
 }
 
 [class$="__title"] {
-    font-size: 4.2rem;
+    font-size: var.$text-size--sub-title;
     line-height: 1.24; /* 123.81% */
 }
 
@@ -80,8 +93,8 @@ button {
     @include mix.size(157px, 64px);
     display: inline-block;
     border-radius: 8px;
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: var.$text-size-lg;
+    font-weight: var.$text-weight-button;
     line-height: 1.66667; /* 166.667% */
     color: var.$primary-color;
     background: var.$button-color;
@@ -90,30 +103,47 @@ button {
 [class$="__btn--md"] {
     @include mix.size(116px, 48px);
     border-radius: 6px;
-    font-size: 1.6rem;
+    font-size: var.$text-size-md;
     line-height: 1.75;
     background: var.$primary-color;
 }
 
 [class$="__btn--sm"] {
-    font-size: 1.4rem;
+    font-size: var.$text-size-sm;
     line-height: 1.72;
 }
 
 [class$="__desc--lg"],
 [class$="__desc--md"],
 [class$="__desc--sm"] {
-    font-size: 1.8rem;
+    font-size: var.$text-size-lg;
+    font-weight: var.$text-weight-desc;
     line-height: 1.6667;
     color: var.$primary-color;
 }
 
 [class$="__desc--md"] {
-    font-size: 1.6rem;
+    font-size: var.$text-size-md;
     line-height: 1.75;
+    color: #665F73;
 }
 
 [class$="__desc--sm"] {
-    font-size: 1.4rem;
+    font-size: var.$text-size-sm;
     line-height: 1.72;
+}
+
+[class^="main__"] {
+    margin-top: 160px;
+}
+
+.card-title{
+    @include mix.size(100%, 86px);
+    @include mix.rounded(0, 0, 8px, 8px);
+    bottom: 0;
+    left: 0;
+    padding: 16px 24px;
+    fill: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
