@@ -1,0 +1,84 @@
+@use "../base" as *;
+
+.main__blog {
+    padding: 100px 0;
+    background: $background-color;
+}
+
+.blog {
+    &__content {
+        @include flexCenter(space-between);
+        margin-bottom: 84px;
+    }
+    &__title {
+        width: 40%;
+    }
+    &__text-bg {
+        top: 40px;
+        left: -90px;
+        scale: 0.6;
+    }
+    &__btn--lg {
+        padding: 17px 25px;
+        transition: all 0.3s;
+        color: #fff;
+        background: $primary-color;
+    }
+    &__btn--lg:hover {
+        opacity: 0.9;
+    }
+    &__image {
+        @include size(100%, 286px);
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    &__circle-box {
+        @include flexCenter(space-between, center);
+        @include size(52px, 12px);
+        @include position(center);
+        margin-top: 55px;
+        gap: 12px;
+    }
+    &__circle {
+        @include size(8px);
+        border-radius: 50%;
+        background: #D8D5DE;
+    }
+    &__circle:first-child {
+        @include size(12px);
+        background: $button-color;
+    }
+}
+
+.blogs {
+    &__content {
+        padding: 30px 0;
+    }
+    &__desc--sm {
+        color: $secondary-color;
+        margin-bottom: 6px;
+    }
+    &__sub-title {
+        width: 90%;
+        margin-bottom: 18px;
+    }
+    &__btn--sm {
+        @include size(auto, auto);
+        margin-top: 11px;
+        transition: all 0.2s;
+        color: $primary-color;
+        background: transparent;
+
+        i {
+            margin-left: 6px;
+            font-size: 1.4rem;
+        }
+    }
+    &__btn--sm:hover:not(i) {
+        text-decoration: underline;
+        color: $button-color;
+    }
+    &-end {
+        margin-top: 30px;
+    }
+}
