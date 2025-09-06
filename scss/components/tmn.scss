@@ -1,0 +1,49 @@
+@use "../base" as *;
+
+/* ========= Testimonial ========= */
+.tmn {
+    &__image-box {
+        @include flexCenter();
+    }
+    &__image--sm {
+        @include size(270px, 284px);
+        border-radius: 8px;
+        object-fit: cover;
+        z-index: 2;
+    }
+    &__image--lg {
+        @include size(370px, 444px);
+        margin-left: -70px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    &__circle-box {
+        top: 380px;
+        left: 135px;
+    }
+    &__circle:last-child {
+        @include size(12px);
+        background: $button-color;
+    }
+    &__content {
+        margin-top: 50px;
+    }
+    &__title {
+        margin-top: 18px;
+        margin-bottom: 36px;
+        width: 90%;
+    }
+    &__desc--md {
+        width: 90%;
+    }
+    &__desc--sm {
+        margin-top: 18px;
+        color: #aba6b5;
+    }
+    &__bg-2 {
+        bottom: -12px;
+        left: -75px;
+        scale: 0.6;
+        z-index: -1;
+    }
+}

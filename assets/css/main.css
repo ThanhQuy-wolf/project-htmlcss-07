@@ -1291,7 +1291,7 @@ button {
 [class$=__desc--md] {
   font-size: 1.6rem;
   line-height: 1.75;
-  color: #665F73;
+  color: #665f73;
 }
 
 [class$=__desc--sm] {
@@ -1301,6 +1301,26 @@ button {
 
 [class^=main__] {
   margin-top: 160px;
+}
+
+[class$=__circle-box] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 52px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  margin-top: 55px;
+  gap: 12px;
+}
+
+[class$=__circle] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d8d5de;
 }
 
 .card-title {
@@ -1650,6 +1670,7 @@ button {
   color: #fff;
 }
 
+/* ========= Blog ========= */
 .main__blog {
   padding: 100px 0;
   background: #fff8f3;
@@ -1683,24 +1704,6 @@ button {
   height: 286px;
   object-fit: cover;
   border-radius: 8px;
-}
-.blog__circle-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 52px;
-  height: 12px;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  margin-top: 55px;
-  gap: 12px;
-}
-.blog__circle {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #D8D5DE;
 }
 .blog__circle:first-child {
   width: 12px;
@@ -1737,6 +1740,57 @@ button {
 }
 .blogs-end {
   margin-top: 30px;
+}
+
+/* ========= Testimonial ========= */
+.tmn__image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tmn__image--sm {
+  width: 270px;
+  height: 284px;
+  border-radius: 8px;
+  object-fit: cover;
+  z-index: 2;
+}
+.tmn__image--lg {
+  width: 370px;
+  height: 444px;
+  margin-left: -70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.tmn__circle-box {
+  top: 380px;
+  left: 135px;
+}
+.tmn__circle:last-child {
+  width: 12px;
+  height: 12px;
+  background: #936cdd;
+}
+.tmn__content {
+  margin-top: 50px;
+}
+.tmn__title {
+  margin-top: 18px;
+  margin-bottom: 36px;
+  width: 90%;
+}
+.tmn__desc--md {
+  width: 90%;
+}
+.tmn__desc--sm {
+  margin-top: 18px;
+  color: #aba6b5;
+}
+.tmn__bg-2 {
+  bottom: -12px;
+  left: -75px;
+  scale: 0.6;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */

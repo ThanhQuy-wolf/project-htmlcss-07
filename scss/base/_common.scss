@@ -127,7 +127,7 @@ button {
 [class$="__desc--md"] {
     font-size: var.$text-size-md;
     line-height: 1.75;
-    color: #665F73;
+    color: #665f73;
 }
 
 [class$="__desc--sm"] {
@@ -139,13 +139,27 @@ button {
     margin-top: 160px;
 }
 
-.card-title{
+[class$="__circle-box"] {
+    @include mix.flexCenter(space-between, center);
+    @include mix.size(52px, 12px);
+    @include mix.position(center);
+    margin-top: 55px;
+    gap: 12px;
+}
+
+[class$="__circle"] {
+    @include mix.size(8px);
+    border-radius: 50%;
+    background: #d8d5de;
+}
+
+.card-title {
     @include mix.size(100%, 86px);
     @include mix.rounded(0, 0, 8px, 8px);
     bottom: 0;
     left: 0;
     padding: 16px 24px;
-    fill: rgba(255, 255, 255, 0.20);
+    fill: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
