@@ -1196,7 +1196,8 @@ select {
   font-size: inherit;
 }
 
-button {
+button,
+input {
   outline: none;
   border: none;
   background: transparent;
@@ -1791,6 +1792,42 @@ button {
   left: -75px;
   scale: 0.6;
   z-index: -1;
+}
+
+/* ========= News ========= */
+.news__container {
+  padding: 100px;
+  border-radius: 12px;
+  background: #201830;
+}
+.news__content, .news__button-box {
+  margin-left: 30px;
+}
+.news__title {
+  color: #fff;
+}
+.news__desc--md {
+  color: #aba6b5;
+}
+.news__button-box {
+  margin-top: 70px;
+}
+.news__input {
+  width: 370px;
+  height: 64px;
+  width: 100%;
+  padding: 0 28px;
+  border-radius: 8px;
+  color: #fff;
+  background: #2b213f;
+}
+.news__btn--lg {
+  color: #fff;
+}
+.news__text-bg {
+  left: -94px;
+  bottom: -15px;
+  scale: 0.5;
 }
 
 /*# sourceMappingURL=main.css.map */

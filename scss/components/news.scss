@@ -1,0 +1,39 @@
+@use "../base" as *;
+
+/* ========= News ========= */
+.news {
+    &__container {
+        padding: 100px;
+        border-radius: 12px;
+        background: $primary-color;
+    }
+    &__content,
+    &__button-box {
+        margin-left: 30px;
+    }
+    &__title {
+        color: #fff;
+    }
+    &__desc--md {
+        color: #aba6b5;
+    }
+    &__button-box {
+        margin-top: 70px;
+    }
+    &__input {
+        @include size(370px, 64px);
+        width: 100%;
+        padding: 0 28px;
+        border-radius: 8px;
+        color: #fff;
+        background: #2b213f;
+    }
+    &__btn--lg {
+        color: #fff;
+    }
+    &__text-bg {
+        left: -94px;
+        bottom: -15px;
+        scale: 0.5;
+    }
+}
