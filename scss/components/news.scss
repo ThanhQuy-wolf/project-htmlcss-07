@@ -36,4 +36,24 @@
         bottom: -15px;
         scale: 0.5;
     }
+    &__star {
+        font-size: 2.4rem;
+        z-index: 1;
+    }
+}
+
+.star--1 {
+    left: 35px;
+    bottom: 45px;
+    color: $button-color;
+}
+.star--2 {
+    left: 528px;
+    top: 26px;
+    color: #5BC18F;
+}
+.star--3 {
+    right: 27px;
+    top: 180px;
+    color: #FF9051;
 }
